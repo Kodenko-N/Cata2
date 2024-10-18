@@ -1,28 +1,19 @@
 import java.util.Scanner;
-
-    public class InterviewTest_ver2
-    {
-public class ForTest
+public class InterviewTest_
 {
-    public static String Compare(int a, int b) {
-        String result = null;
-        if (a > b) result = "more";
-        if (a < b) result = "less";
-        if (a == b) result = "equal";
-        return result;
 
-    }
-public static int Minus(int a, int b)
+    public static void Compare(int a, int b)
     {
-    int MinusResult = a-b;
-    return MinusResult;
+        String result;
+        if(a>b) System.out.println("Figure "+a +" more than "+b);
+        if(a<b) System.out.println("Figure "+a +" less than "+b);
+        if(a==b) System.out.println("Figures is equal ");
     }
-}
-
-        public static void main(String[] args)
+    public static void main(String[] args)
         {
-            int a;
-            int b;
+            int a = 1;
+            int b = 2;
+
             Scanner sc = new Scanner(System.in);
             System.out.println("Введите значение а");
             String str = sc.nextLine();
@@ -33,7 +24,6 @@ public static int Minus(int a, int b)
                 a = 0;
                 System.out.println("Ошибка ввода. Принято а=0");
             }
-            System.out.println("a= " + a);
             System.out.println("Введите значение b");
             String str2 = sc.nextLine();
             try {
@@ -44,14 +34,10 @@ public static int Minus(int a, int b)
                 System.out.println("Ошибка ввода. Принято b=0");
             }
 
-            String Out = ForTest.Compare(a, b);
-            System.out.println(a +" "+ Out+" "+ b);
-            System.out.println("Minus result is " + ForTest.Minus(a,b));
+            Compare(a, b);
+            // System.out.println(a + Q + b);
+
 
         }
 
-    }
-
-
-
-
+}

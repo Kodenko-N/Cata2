@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class StringCalculator {
+public class StringCalculator_ {
         public static String sum (String str1, String str2) //Сложение
         {
             String res = str1 + str2;
