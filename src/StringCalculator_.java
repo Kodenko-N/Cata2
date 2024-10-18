@@ -12,7 +12,6 @@ public class StringCalculator_ {
             String res = str1.replaceFirst(str2, "");
             return res;
         }
-
         public static String multiply (String str1,int a) //Умножение
         {
             String res = "";
@@ -21,14 +20,12 @@ public class StringCalculator_ {
             }
             return res;
         }
-
         public static String div (String str1,int a) //Деление
         {
             int cut = str1.length() / a;
             String res = str1.substring(0, cut);
             return res;
         }
-
     public static String strFormat(String strIn) //Выделение части строки в кавычках, начиная с 0 символа
     {
         String str = "";
@@ -117,7 +114,7 @@ public static int intFormat (String strIn)
 
         if (op.equals(" + ") || op.equals(" - ") || op.equals(" * ") || op.equals(" / "))
         {
-           // System.out.println("the oprator is \"" + op + "\"");
+            System.out.println("the oprator is \"" + op + "\"");
             strInUpd = strInUpd.substring(3, strInUpd.length());
            // System.out.println("Line in without first sentence and operator is " + strInUpd);
             //Сложение
