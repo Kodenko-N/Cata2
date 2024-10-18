@@ -1,4 +1,4 @@
-// JUST TO TEST GITHUB Conection
+// NEXT JUST TO TEST GITHUB Conection
 
 import java.util.Scanner;
 public class InterviewTest_
